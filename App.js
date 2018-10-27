@@ -31,6 +31,7 @@ export default class App extends Component {
         key={item.key}
         title={item.text}
         image={{uri: item.uri}}
+        
       >
         <Text style={{ marginBottom: 10 }}>I can customize the Crad further</Text>
         <Button 
@@ -49,6 +50,7 @@ export default class App extends Component {
         <Deck 
           data={DATA}
           renderCard={this.renderCard}
+          renderNoMoreCards={this.renderNoMoreCards}
         />
       </View>
     );
